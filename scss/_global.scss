@@ -1,0 +1,121 @@
+body {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+}
+body,
+html {
+  height: 100%;
+}
+body {
+  display: flex;
+  flex-direction: column;
+}
+.main {
+  flex-grow: 1;
+}
+a {
+  text-decoration: none;
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  line-height: 17px;
+  color: #212121;
+}
+ul,
+ol {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+button {
+  padding: 0;
+  margin: 0;
+  border: none;
+  cursor: pointer;
+  background: transparent;
+}
+.container {
+  max-width: 1170px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+.modal {
+  background: #fff;
+  padding: 0;
+  padding: 60px 69px 100px;
+  border-radius: 10px;
+  &__title {
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    color: #5e50a2;
+    margin-bottom: 30px;
+  }
+  &__input {
+    max-width: 430px;
+    width: 100%;
+    border: 1px solid #ded9f8;
+    border-radius: 5px;
+    margin-bottom: 30px;
+    padding: 14px 24px;
+  }
+  &__town {
+    display: block;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    transition: all 0.6s ease-in-out;
+    &:hover {
+      color: #5e50a2;
+    }
+  }
+  &__town + .modal__town {
+    margin-top: 15px;
+  }
+}
+.fancybox-can-pan .fancybox-content,
+.fancybox-can-swipe .fancybox-content {
+  cursor: auto;
+  overflow: initial;
+}
+.fancybox-close-small {
+  border: none;
+  opacity: 1;
+  padding: 8px;
+  position: absolute;
+  right: -12px;
+  top: -44px;
+  z-index: 401;
+  width: 40px;
+  height: 40px;
+  background: #65c6a2;
+  border-radius: 50%;
+  background-image: url("../img/icons/close.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.fancybox-slide--html .fancybox-close-small {
+  padding: 0;
+  right: -70px;
+}
+.fancybox-button svg {
+  display: none;
+} /*
+.fancybox-button svg {
+  display: block;
+  height: 100%;
+  overflow: visible;
+  position: relative;
+  width: 100%;
+  background-image: none;
+  background-image: url('../img/icons/close.svg');
+}*/
+input::placeholder,
+textarea::placeholder {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  color: #ded9f8;
+}
