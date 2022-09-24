@@ -5,6 +5,9 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jQueryFormStyler/2.0.2/jquery.formstyler.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jQueryFormStyler/2.0.2/jquery.formstyler.theme.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
   <link rel="stylesheet" href="css/style.css">
   <title>Document</title>
 </head>
@@ -52,9 +55,9 @@
       <div class="container">
         <div class="header-nav__info">
           <ul class="header-nav__list">
-            <li class="header-nav__item"><a class="header-nav__link" href="">о нас</a></li>
-            <li class="header-nav__item"><a class="header-nav__link" href="">стоимость</a></li>
-            <li class="header-nav__item"><a class="header-nav__link" href="">преимущества</a></li>
+            <li class="header-nav__item"><a class="header-nav__link" href="#about">о нас</a></li>
+            <li class="header-nav__item"><a class="header-nav__link" href="#price">стоимость</a></li>
+            <li class="header-nav__item"><a class="header-nav__link" href="#advantage">преимущества</a></li>
             <li class="header-nav__item"><a class="header-nav__link" href="">требования к волосам</a></li>
             <li class="header-nav__item"><a class="header-nav__link" href="">вопрос/ответ</a></li>
             <li class="header-nav__item"><a class="header-nav__link" href="">отзывы</a></li>
@@ -66,7 +69,312 @@
     </nav>
   </header>
   <main class="main">
-    
+    <section class="home-info">
+      <div class="container">
+        <div class="home-info__inner">
+          <div class="home-info__info">
+            <h1 class="home-info__title">Продать волосы в Екатеринбурге</h1>
+            <p class="home-info__text">Купим ваши волосы дорого от 40 см – 55000₽ и выше</p>
+            <p class="home-info__description">Получите онлайн оценку стоимости своих волос или напишите нашему менеджеру в WhatsApp</p>
+            <div class="home-info__box">
+              <a class="home-info__link" href="">Расчитать стоимость</a>
+              <a class="home-info__link" href="">Написать менеджеру</a>
+            </div>
+          </div>
+          <img class="home-info__img" src="img/young-woman.png" alt="женщина">
+        </div>
+      </div>
+    </section>
+    <section class="about" id="about">
+      <div class="container">
+        <div class="about__inner">
+          <h2 class="title about__title">О нас</h2>
+          <div class="about__box">
+            <p class="about__text">Если вы планируете продать свои волосы – сначала обратитесь к нам. <br> Мы хорошо знаем цену ваших волос и готовы перебить цену конкурентов</p>
+            <p class="about__text">Срезаем волосы, как с выездом курьера парикмахера или курьера, так и в своих партнерских салонах в Екатеринбурге. Волосы не вычесываем</p>
+          </div>
+          <div class="about__list">
+            <div class="about__item">
+              <div class="about__number">8</div>
+              <span class="about__span">лет работы</span>
+            </div>
+            <div class="about__item">
+              <div class="about__number">>28</div>
+              <span class="about__span">кос покупаем <br> ежедневно</span>
+            </div>
+            <div class="about__item">
+              <div class="about__number">>300</div>
+              <span class="about__span">обращений <br> ежедневно</span>
+            </div>
+          </div>
+          <h2 class="title about__title">Какие волосы дороже?</h2>
+          <div class="about__box">
+            <p class="about__text">Покупая волосы, мы проверяем их качество, которое влияет на стоимость. Волосы, которые никогда не красились и проходили тщательный уход, ценятся намного больше волос, которые страдали от химических составов красок и тоников</p>
+            <p class="about__text">Чем тоньше, мягче, шелковистее и светлее волосы, тем выше цена. Детские волосы ценятся больше всего!</p>
+          </div>
+        </div>
+      </div> 
+    </section>
+    <section class="price" id="price">
+      <div class="container">
+        <div class="price__inner">
+          <form class="price__form" action="">
+            <h2 class="title price__title">Узнайте стоимость ваших волос</h2>
+            <div class="price__item">
+              <div class="price__caption">Цвет ваших волос</div>
+              <div class="price__box">
+                <label class="custom-checkbox">
+                  <input class="hidden-checkbox" type="checkbox">
+                  <div class="checkbox">
+                    <svg class="checkmark" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="#fff" d="M20.285 2l-11.285 11.567-5.286-5.011-3.714 3.716 9 8.728 15-15.285z"/></svg>
+                  </div>
+                  Русые
+                </label>
+                <label class="custom-checkbox">
+                  <input class="hidden-checkbox" type="checkbox">
+                  <div class="checkbox">
+                    <svg class="checkmark" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="#fff" d="M20.285 2l-11.285 11.567-5.286-5.011-3.714 3.716 9 8.728 15-15.285z"/></svg>
+                  </div>
+                  Брюнет
+                </label>
+                <label class="custom-checkbox">
+                  <input class="hidden-checkbox" type="checkbox">
+                  <div class="checkbox">
+                    <svg class="checkmark" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="#fff" d="M20.285 2l-11.285 11.567-5.286-5.011-3.714 3.716 9 8.728 15-15.285z"/></svg>
+                  </div>
+                  Рыжие
+                </label>
+                <label class="custom-checkbox">
+                  <input class="hidden-checkbox" type="checkbox">
+                  <div class="checkbox">
+                    <svg class="checkmark" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="#fff" d="M20.285 2l-11.285 11.567-5.286-5.011-3.714 3.716 9 8.728 15-15.285z"/></svg>
+                  </div>
+                  Блонд
+                </label>
+              </div>
+            </div>
+            <div class="price__item">
+              <div class="price__caption">Размер ваших волос в сантиметрах</div>
+              <div class="price__box">
+                <label class="custom-checkbox">
+                  <input class="hidden-checkbox" type="checkbox">
+                  <div class="checkbox">
+                    <svg class="checkmark" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="#fff" d="M20.285 2l-11.285 11.567-5.286-5.011-3.714 3.716 9 8.728 15-15.285z"/></svg>
+                  </div>
+                  40 – 50
+                </label>
+                <label class="custom-checkbox">
+                  <input class="hidden-checkbox" type="checkbox">
+                  <div class="checkbox">
+                    <svg class="checkmark" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="#fff" d="M20.285 2l-11.285 11.567-5.286-5.011-3.714 3.716 9 8.728 15-15.285z"/></svg>
+                  </div>
+                  50 – 60
+                </label>
+                <label class="custom-checkbox">
+                  <input class="hidden-checkbox" type="checkbox">
+                  <div class="checkbox">
+                    <svg class="checkmark" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="#fff" d="M20.285 2l-11.285 11.567-5.286-5.011-3.714 3.716 9 8.728 15-15.285z"/></svg>
+                  </div>
+                  60 – 70
+                </label>
+                <label class="custom-checkbox">
+                  <input class="hidden-checkbox" type="checkbox">
+                  <div class="checkbox">
+                    <svg class="checkmark" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="#fff" d="M20.285 2l-11.285 11.567-5.286-5.011-3.714 3.716 9 8.728 15-15.285z"/></svg>
+                  </div>
+                  70 – 80
+                </label>
+                <label class="custom-checkbox">
+                  <input class="hidden-checkbox" type="checkbox">
+                  <div class="checkbox">
+                    <svg class="checkmark" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="#fff" d="M20.285 2l-11.285 11.567-5.286-5.011-3.714 3.716 9 8.728 15-15.285z"/></svg>
+                  </div>
+                  80 и больше
+                </label>
+              </div>
+            </div>
+            <div class="price__item">
+              <div class="price__caption">Загрузить фото</div>
+              <input class="price__file" type="file" data-placeholder="">
+            </div>
+            <div class="price__item">
+              <div class="price__caption">Как с вами связаться?</div>
+              <div class="price__holder">
+                <input class="price__input" type="text" placeholder="ваше имя">
+                <input class="price__input" type="tel" placeholder="номер телефона">
+              </div>
+              <div class="price__box">
+                <label class="custom-checkbox">
+                  <input class="hidden-checkbox" type="checkbox">
+                  <div class="checkbox">
+                    <svg class="checkmark" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="#fff" d="M20.285 2l-11.285 11.567-5.286-5.011-3.714 3.716 9 8.728 15-15.285z"/></svg>
+                  </div>
+                  WhatsApp
+                </label>
+                <label class="custom-checkbox">
+                  <input class="hidden-checkbox" type="checkbox">
+                  <div class="checkbox">
+                    <svg class="checkmark" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="#fff" d="M20.285 2l-11.285 11.567-5.286-5.011-3.714 3.716 9 8.728 15-15.285z"/></svg>
+                  </div>
+                  Telegram
+                </label>
+                <label class="custom-checkbox">
+                  <input class="hidden-checkbox" type="checkbox">
+                  <div class="checkbox">
+                    <svg class="checkmark" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="#fff" d="M20.285 2l-11.285 11.567-5.286-5.011-3.714 3.716 9 8.728 15-15.285z"/></svg>
+                  </div>
+                  Viber
+                </label>
+                <label class="custom-checkbox">
+                  <input class="hidden-checkbox" type="checkbox">
+                  <div class="checkbox">
+                    <svg class="checkmark" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="#fff" d="M20.285 2l-11.285 11.567-5.286-5.011-3.714 3.716 9 8.728 15-15.285z"/></svg>
+                  </div>
+                  Звонок
+                </label>
+              </div>
+            </div>
+            <a class="price__link" href="">Узнать стоимость</a>
+          </form>
+        </div>
+        <div class="price__wrapper">
+          <h2 class="title">Примерная стоимость ваших волос</h2>
+          <div class="price__list">
+            <div class="price__items">
+              <div class="price__name">Русые</div>
+              <div class="price__num title">7500 ₽</div>
+              <p class="price__text">Цена указанна за 40 см волос хорошего качества</p>
+            </div>
+            <div class="price__items">
+              <div class="price__name">Брюнет</div>
+              <div class="price__num title">10000 ₽</div>
+              <p class="price__text">Цена указанна за 40 см волос хорошего качества</p>
+            </div>
+            <div class="price__items">
+              <div class="price__name">Рыжие</div>
+              <div class="price__num title">14000 ₽</div>
+              <p class="price__text">Цена указанна за 40 см волос хорошего качества</p>
+            </div>
+            <div class="price__items">
+              <div class="price__name">Блонд</div>
+              <div class="price__num title">15000 ₽</div>
+              <p class="price__text">Цена указанна за 40 см волос хорошего качества</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="advantage" id="advantage">
+      <div class="container">
+        <h2 class="title">Наши преимущества</h2>
+        <div class="advantage__info">
+          <div class="advantage__items">
+            <div class="advantage__images">
+              <img class="advantage__icon" src="img/icons/advantage/1.svg" alt="логотип">
+            </div>
+            <ul class="advantage__list">
+              <li class="advantage__item">Конкурентная цена</li>
+              <li class="advantage__item">самая высокая цена выкупа</li>
+            </ul>
+          </div>
+          <div class="advantage__items">
+            <div class="advantage__images">
+              <img class="advantage__icon" src="img/icons/advantage/2.svg" alt="логотип">
+            </div>
+            <ul class="advantage__list">
+              <li class="advantage__item">Скорость</li>
+              <li class="advantage__item">онлайн-оценка волос в течение 1ч.</li>
+            </ul>
+          </div>
+          <div class="advantage__items">
+            <div class="advantage__images">
+              <img class="advantage__icon" src="img/icons/advantage/3.svg" alt="логотип">
+            </div>
+            <ul class="advantage__list">
+              <li class="advantage__item">Быстрая оплата</li>
+              <li class="advantage__item">оплата сразу любым удобным способом</li>
+            </ul>
+          </div>
+          <div class="advantage__items">
+            <div class="advantage__images">
+              <img class="advantage__icon" src="img/icons/advantage/4.svg" alt="логотип">
+            </div>
+            <ul class="advantage__list">
+              <li class="advantage__item">Без обмана</li>
+              <li class="advantage__item">честные замеры волос</li>
+            </ul>
+          </div>
+          <div class="advantage__items">
+            <div class="advantage__images">
+              <img class="advantage__icon" src="img/icons/advantage/5.svg" alt="логотип">
+            </div>
+            <ul class="advantage__list">
+              <li class="advantage__item">Свое производство</li>
+              <li class="advantage__item">по изготовлению изделий из волос</li>
+            </ul>
+          </div>
+          <div class="advantage__items">
+            <div class="advantage__images">
+              <img class="advantage__icon" src="img/icons/advantage/6.svg" alt="логотип">
+            </div>
+            <ul class="advantage__list">
+              <li class="advantage__item">Бесплатная услуга</li>
+              <li class="advantage__item">стильная стрижка в подарок</li>
+            </ul>
+          </div>
+          <div class="advantage__items">
+            <div class="advantage__images">
+              <img class="advantage__icon" src="img/icons/advantage/7.svg" alt="логотип">
+            </div>
+            <ul class="advantage__list">
+              <li class="advantage__item">Не вычесываем</li>
+              <li class="advantage__item">выкуп полного среза без вычёсывания</li>
+            </ul>
+          </div>
+          <div class="advantage__items">
+            <div class="advantage__images">
+              <img class="advantage__icon" src="img/icons/advantage/8.svg" alt="логотип">
+            </div>
+            <ul class="advantage__list">
+              <li class="advantage__item">Большая сеть</li>
+              <li class="advantage__item">покупаем волосы в  1123 городах России</li>
+            </ul>
+          </div>
+          <div class="advantage__items">
+            <div class="advantage__images">
+              <img class="advantage__icon" src="img/icons/advantage/9.svg" alt="логотип">
+            </div>
+            <ul class="advantage__list">
+              <li class="advantage__item">Свои салоны</li>
+              <li class="advantage__item">В которых можно сдать волосы в Екатеринбурге</li>
+            </ul>
+          </div>
+        </div>
+        <h2 class="title">Стильная стрижка в подарок!</h2>
+        <div class="advantage-slider">
+          <div class="advantage-slider__card">
+            <div class="advantage-slider__item">
+              <img class="advantage-slider__img" src="img/icons/advantage/1.png" alt="">
+            </div>
+          </div>
+          <div class="advantage-slider__card">
+            <div class="advantage-slider__item">
+              <img class="advantage-slider__img" src="img/icons/advantage/2.png" alt="">
+            </div>
+          </div>
+          <div class="advantage-slider__card">
+            <div class="advantage-slider__item">
+              <img class="advantage-slider__img" src="img/icons/advantage/1.png" alt="">
+            </div>
+          </div>
+          <div class="advantage-slider__card">
+            <div class="advantage-slider__item">
+              <img class="advantage-slider__img" src="img/icons/advantage/2.png" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
   <footer class="footer">
     <div class="container">
@@ -123,6 +431,8 @@
   </footer>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jQueryFormStyler/2.0.2/jquery.formstyler.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>

@@ -58,7 +58,7 @@
     display: grid;
     place-items: center;
   }
-  &__btn{
+  &__btn {
     display: none;
   }
 }
@@ -75,6 +75,306 @@
     letter-spacing: 0.02em;
     text-transform: uppercase;
     color: #fff;
+  }
+}
+.home-info {
+  background: #ded9f8;
+  &__inner {
+    display: flex;
+    align-items: center;
+  }
+  &__title {
+    max-width: 470px;
+    font-weight: 700;
+    font-size: 55px;
+    line-height: 67px;
+    color: #5e50a2;
+    margin-bottom: 30px;
+  }
+  &__text {
+    max-width: 370px;
+    font-size: 18px;
+    line-height: 28px;
+    margin-bottom: 54px;
+  }
+  &__description {
+    max-width: 400px;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 30px;
+  }
+  &__img {
+    margin-left: auto;
+  }
+  &__box {
+    display: flex;
+    gap: 0 21px;
+  }
+  &__link {
+    @extend %btn-link;
+  }
+}
+.about {
+  padding: 120px 0;
+  &__box {
+    display: flex;
+  }
+  &__box:not(:last-child) {
+    margin-bottom: 68px;
+  }
+  &__text {
+    max-width: 470px;
+    font-size: 18px;
+    line-height: 28px;
+  }
+  &__text:nth-child(2) {
+    margin-left: 130px;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    color: #5e50a2;
+  }
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 120px;
+  }
+  &__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 370px;
+    width: 100%;
+    background: #5e50a2;
+    border-radius: 10px;
+    padding: 32px 0;
+  }
+  &__number {
+    font-weight: 700;
+    font-size: 44px;
+    line-height: 50px;
+    color: #65c6a2;
+    margin-right: 15px;
+  }
+  &__span {
+    font-weight: 600;
+    color: #fff;
+  }
+}
+.price {
+  background: #ded9f8;
+  padding: 80px 0 0px;
+  background-image: url("../img/price-bg.png");
+  background-repeat: no-repeat;
+  background-position-x: right;
+  background-position-y: bottom;
+  &__inner {
+    padding-bottom: 80px;
+  }
+  &__form {
+    max-width: 570px;
+  }
+  &__item + .price__item {
+    margin-top: 35px;
+  }
+  &__caption {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 15px;
+  }
+  &__box {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 13px 33px;
+  }
+  .custom-checkbox {
+    // Тут мы просто центрируем чекбокс и текст
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    line-height: 28px;
+    width: fit-content;
+    cursor: pointer;
+  }
+  .custom-checkbox .checkbox {
+    margin-right: 11px;
+  }
+  .custom-checkbox input {
+    -webkit-appearance: none; // Скрываем оригинальный чекбокс
+    position: absolute; // После скрытия оставется пустое пространство,
+    // но абсолютное позиционирование это устранит
+  }
+  .checkbox {
+    // Тут стилизуем сам чекбокс
+    position: relative;
+    width: 14px;
+    height: 14px;
+    border: 1px solid #5e50a2;
+    background: transparent;
+    border-radius: 50%;
+  }
+  .checkmark {
+    // Тут центритуем и пишем стили для иконки
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    height: auto;
+    display: none; // Скрываем иконку
+  }
+  .custom-checkbox input:checked ~ .checkbox .checkmark {
+    display: block; // Показываем иконку, когда чекбокс активен
+    display: none;
+  }
+  .custom-checkbox input:checked ~ .checkbox {
+    background: #fff;
+    border: 3px solid #5e50a2;
+    // Если вы хотите не только отображать икнонку, но и менять
+    // сам чекбокс после активации - напишите сюда код для активного состояния
+  }
+  &__holder {
+    display: flex;
+    gap: 0 32px;
+    margin-bottom: 15px;
+  }
+  &__input {
+    max-width: 269px;
+    border: 1px solid #5e50a2;
+    border-radius: 5px;
+    padding: 14px 24px;
+    &::placeholder {
+      color: #5e50a2;
+    }
+  }
+  &__link {
+    @extend %btn-link;
+    margin-top: 30px;
+    display: inline-block;
+  }
+  .jq-file {
+    width: 200px;
+    border: 1px solid #5e50a2;
+    border-radius: 5px;
+    box-shadow: none;
+  }
+  .jq-file__name {
+    width: 200px;
+    height: 56px;
+    padding: 0;
+    border-radius: 0px;
+    background: transparent;
+    box-shadow: none;
+    border: none;
+  }
+  .jq-file__browse {
+    width: 200px;
+    padding: 0;
+    border: none;
+    border-radius: 0px;
+    background: transparent;
+    box-shadow: none;
+    text-shadow: none;
+    display: grid;
+    place-items: center;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    color: #5e50a2;
+    inset: 0;
+  }
+  &__wrapper {
+    transform: translateY(225px);
+    z-index: 1;
+    margin-top: -225px;
+    background: #5e50a2;
+    border-radius: 10px;
+    color: #fff;
+    padding: 60px 86px 100px 100px;
+    .title {
+      max-width: 570px;
+    }
+  }
+  &__list {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__items {
+    max-width: 170px;
+  }
+  &__name {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 13px;
+  }
+  &__num {
+    color: #65c6a2;
+    margin-bottom: 15px;
+    width: max-content;
+  }
+}
+.advantage {
+  padding: 345px 0 195px;
+  .title {
+    margin-bottom: 60px;
+  }
+  &__info {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 100px 0px;
+    margin-bottom: 120px;
+  }
+  &__items {
+    display: flex;
+    max-width: 370px;
+  }
+  &__list {
+    max-width: 270px;
+    font-size: 18px;
+    line-height: 28px;
+    margin-left: auto;
+    text-align: left;
+    width: 100%;
+  }
+  &__item + .advantage__item {
+    margin-top: 13px;
+  }
+  &__item:first-child {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    color: #5e50a2;
+  }
+  &__images {
+    display: grid;
+    place-items: center;
+    width: 60px;
+    height: 60px;
+    background: #65c6a2;
+    border-radius: 50%;
+  }
+}
+.advantage-slider {
+  &__card,
+  &__item {
+    width: 570px;
+    height: 570px;
+  }
+  &__img {
+    width: 570px;
+    height: 570px;
+    object-fit: cover;
+  }
+  .slick-list {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    overflow: inherit;
   }
 }
 .footer {
