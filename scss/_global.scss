@@ -50,6 +50,17 @@ button {
   line-height: 50px;
   margin-bottom: 30px;
 }
+.date {
+  font-weight: 600;
+  line-height: 20px;
+  color: #5e50a2;
+  margin-bottom: 30px;
+}
+.author {
+  font-weight: 600;
+  line-height: 20px;
+  color: #5e50a2;
+}
 .modal {
   background: #fff;
   padding: 0;
@@ -64,7 +75,8 @@ button {
     color: #5e50a2;
     margin-bottom: 30px;
   }
-  &__input {
+  &__input,
+  &__phone {
     max-width: 430px;
     width: 100%;
     border: 1px solid #ded9f8;

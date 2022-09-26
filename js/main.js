@@ -17,6 +17,20 @@ $(function() {
 
 $('.advantage-slider').slick({
   cssEase: 'ease-out',
+  dots: true,
+  arrows: true,
   slidesToShow: 2,
-  slidesToScroll: 1
+  slidesToScroll: 1,
+  prevArrow: '<button type="button" class="slick-prev"><img src="img/icons/arrow-prev.svg" alt=""></button>',
+  nextArrow: '<button type="button" class="slick-next"><img src="img/icons/arrow-next.svg" alt=""></button>',
+})
+
+$('.review__slider').slick({
+  cssEase: 'ease-out',
+  dots: true,
+  arrows: true,
+  slidesToShow: 2,
+  slidesToScroll: 1,
+  prevArrow: '<button type="button" class="slick-prev"><img src="img/icons/arrow-prev.svg" alt=""></button>',
+  nextArrow: '<button type="button" class="slick-next"><img src="img/icons/arrow-next.svg" alt=""></button>',
 })
