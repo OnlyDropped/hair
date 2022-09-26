@@ -23,6 +23,14 @@ $('.advantage-slider').slick({
   slidesToScroll: 1,
   prevArrow: '<button type="button" class="slick-prev"><img src="img/icons/arrow-prev.svg" alt=""></button>',
   nextArrow: '<button type="button" class="slick-next"><img src="img/icons/arrow-next.svg" alt=""></button>',
+  responsive: [
+    {
+      breakpoint: 511,
+      settings: {
+        slidesToShow: 1,
+      }
+    },
+  ]
 })
 
 $('.review__slider').slick({
