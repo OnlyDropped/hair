@@ -111,6 +111,16 @@
       margin-left: auto;
     }
   }
+  .blog-main {
+    &__item {
+      //border: 1px solid #000;
+      width: 515px;
+    }
+    &__img,
+    &__images {
+      width: 515px;
+    }
+  }
 }
 
 @media (max-width: 1122px) {
@@ -217,6 +227,15 @@
       max-width: 450px;
     }
   }
+  .blog-main {
+    &__item {
+      width: 475px;
+    }
+    &__img,
+    &__images {
+      width: 475px;
+    }
+  }
 }
 
 @media (max-width: 1005px) {
@@ -312,6 +331,15 @@
       object-position: center;
     }
   }
+  .blog-main {
+    &__item {
+      width: 455px;
+    }
+    &__img,
+    &__images {
+      width: 455px;
+    }
+  }
 }
 
 @media (max-width: 945px) {
@@ -352,6 +380,15 @@
     &__images {
       width: 400px;
       object-fit: contain;
+    }
+  }
+  .blog-main {
+    &__item {
+      width: 425px;
+    }
+    &__img,
+    &__images {
+      width: 425px;
     }
   }
 }
@@ -426,7 +463,7 @@
     }
   }
   .post {
-    .title{
+    .title {
       text-align: center;
     }
     &__images {
@@ -441,6 +478,40 @@
     &__blockquote {
       margin: 0 auto;
       text-align: center;
+    }
+  }
+  .blog-main {
+    &__inner {
+      flex-direction: column;
+    }
+    &__info,
+    &__content {
+      max-width: 100%;
+    }
+    &__item {
+      margin: 0 auto 40px;
+      max-width: 670px;
+      width: 100%;
+      min-height: 555px;
+    }
+    &__item--active {
+      min-height: 370px;
+    }
+    &__images {
+      margin: 0 auto 40px;
+    }
+    &__img,
+    &__images {
+      width: 670px;
+      height: 300px;
+      object-fit: cover;
+      object-position: top;
+    }
+    &__subtitle {
+      max-width: 100%;
+    }
+    &__text {
+      max-width: 100%;
     }
   }
 }
@@ -768,6 +839,15 @@
       height: 300px;
     }
   }
+  .blog-main {
+    .title {
+      text-align: center;
+    }
+    &__img,
+    &__images {
+      height: 275px;
+    }
+  }
 }
 @media (max-width: 450px) {
   .advantage-slider {
@@ -803,6 +883,15 @@
     }
     &__contact {
       padding: 45px 30px;
+    }
+  }
+  .blog-main {
+    .title {
+      font-size: 38px;
+    }
+    &__img,
+    &__images {
+      object-position: right;
     }
   }
 }
@@ -977,6 +1066,9 @@
       font-size: 33px;
     }
   }
+  .blog-main {
+    padding: 60px 0 50px;
+  }
 }
 
 @media (max-width: 320px) {
@@ -1080,6 +1172,14 @@
     }
     .title {
       font-size: 28px;
+    }
+  }
+  .blog-main {
+    .date {
+      margin-bottom: 0;
+    }
+    .title {
+      font-size: 33px;
     }
   }
 }
