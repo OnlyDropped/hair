@@ -1465,6 +1465,7 @@ textarea::placeholder {
   max-width: 770px;
   width: 100%;
   margin-left: auto;
+  background: yellowgreen;
 }
 
 .modal-contact {
@@ -1790,6 +1791,8 @@ textarea::placeholder {
     inset: 0;
     -webkit-transform: translateX(-100%);
             transform: translateX(-100%);
+    -webkit-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
   }
   .header-nav__list {
     position: absolute;
@@ -1812,6 +1815,10 @@ textarea::placeholder {
   .header-nav__link {
     font-size: 20px;
   }
+  .header-nav--active {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
   .header-top {
     padding: 30px 0;
   }
@@ -1830,6 +1837,7 @@ textarea::placeholder {
     cursor: pointer;
     position: relative;
     z-index: 1;
+    background: transparent;
   }
   .header-top__btn .header-top__span {
     position: absolute;
@@ -1970,6 +1978,13 @@ textarea::placeholder {
     width: 560px;
     height: 560px;
   }
+  .review__item {
+    padding: 45px 50px 55px;
+  }
+  .review__card {
+    max-width: 500px;
+    margin: 0 32px;
+  }
 }
 
 @media (max-width: 1170px) {
@@ -2004,6 +2019,46 @@ textarea::placeholder {
     min-height: 420px;
     padding: 55px 60px;
   }
+  .blog__item {
+    max-width: 345px;
+    min-height: 670px;
+    overflow: hidden;
+  }
+  .blog__images, .blog__img {
+    width: 345px;
+    height: 345px;
+  }
+  .buy__title {
+    max-width: 100%;
+  }
+  .buy__list {
+    margin-bottom: 25px;
+  }
+  .buy__item {
+    max-width: 450px;
+    padding-left: 25px;
+  }
+  .buy__text {
+    z-index: 3;
+    position: relative;
+  }
+  .buy__item:before {
+    left: 0;
+  }
+  .buy__contact {
+    padding: 55px 47px 75px;
+    margin-bottom: 80px;
+  }
+  .buy__contact .title {
+    max-width: 100%;
+  }
+  .buy__form {
+    max-width: 350px;
+  }
+  .buy__content {
+    margin: 0;
+    margin-left: auto;
+  }
 }
 
 @media (max-width: 1122px) {
@@ -2022,6 +2077,15 @@ textarea::placeholder {
         grid-template-columns: repeat(2, 1fr);
     gap: 30px 0px;
     margin-bottom: 85px;
+  }
+  .contacts {
+    padding: 100px 0;
+    background: darkcyan;
+  }
+  .contacts__map {
+    max-width: 650px;
+    width: 100%;
+    margin-left: auto;
   }
 }
 
@@ -2058,6 +2122,28 @@ textarea::placeholder {
   .advantage-slider__img {
     width: 485px;
     height: 485px;
+  }
+  .blog__content {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 15px 10px;
+  }
+  .blog__item {
+    max-width: 370px;
+    overflow: hidden;
+  }
+  .blog__images, .blog__img {
+    width: 370px;
+    height: 370px;
+  }
+  .blog__box, .blog__text {
+    max-width: 450px;
+  }
+  .contacts__map {
+    max-width: 600px;
   }
 }
 
@@ -2109,6 +2195,22 @@ textarea::placeholder {
   .requirements__info {
     padding: 55px 45px;
   }
+  .blog__info {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 20px 0;
+  }
+  .blog__text, .blog__box {
+    max-width: 100%;
+  }
+  .review__item {
+    padding: 35px 40px 45px;
+  }
+  .contacts__map {
+    max-width: 555px;
+  }
 }
 
 @media (max-width: 945px) {
@@ -2125,6 +2227,11 @@ textarea::placeholder {
   }
   .about__number {
     font-size: 35px;
+  }
+  .buy__inner::before {
+    width: 500px;
+    height: 800px;
+    background-size: contain;
   }
 }
 
@@ -2175,6 +2282,25 @@ textarea::placeholder {
   }
   .requirements__info {
     margin: 0 auto;
+  }
+  .buy__info {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 25px 0;
+  }
+  .buy__form {
+    max-width: 100%;
+  }
+  .buy__content {
+    margin: 0;
+  }
+  .contacts__map {
+    max-width: 475px;
+  }
+  .contacts__span {
+    margin-bottom: 0;
   }
 }
 
@@ -2250,6 +2376,18 @@ textarea::placeholder {
   .price__num {
     margin: 0 auto;
   }
+  .contacts__inner {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 20px 0px;
+  }
+  .contacts__map {
+    height: 350px;
+    max-width: 100%;
+    margin-left: 0;
+  }
 }
 
 @media (max-width: 805px) {
@@ -2282,6 +2420,16 @@ textarea::placeholder {
   }
   .questions__container input:checked + .questions__label + .questions__body {
     padding: 10px 14px 30px;
+  }
+  .blog__content {
+    gap: 35px 0px;
+  }
+  .blog__item {
+    max-width: 400px;
+  }
+  .blog__images, .blog__img {
+    width: 400px;
+    height: 400px;
   }
 }
 
@@ -2349,6 +2497,15 @@ textarea::placeholder {
     width: 420px;
     height: 420px;
   }
+  .review .title {
+    font-size: 42px;
+  }
+  .buy__list {
+    display: contents;
+  }
+  .buy__inner::before {
+    background-image: none;
+  }
 }
 
 @media (max-width: 510px) {
@@ -2395,6 +2552,32 @@ textarea::placeholder {
         -ms-flex-direction: column;
             flex-direction: column;
   }
+  .blog__item {
+    max-width: 385px;
+  }
+  .blog__images, .blog__img {
+    height: 385px;
+    width: 385px;
+  }
+  .review {
+    padding: 70px 0px;
+  }
+  .review .title {
+    font-size: 37px;
+    text-align: center;
+  }
+  .review__card {
+    margin: 0 16px;
+  }
+  .review__item {
+    padding: 30px;
+  }
+  .review__slogan {
+    text-align: center;
+  }
+  .buy .title {
+    font-size: 39px;
+  }
 }
 
 @media (max-width: 450px) {
@@ -2408,6 +2591,22 @@ textarea::placeholder {
   }
   .requirements .title {
     font-size: 35px;
+  }
+  .blog__item {
+    max-width: 350px;
+  }
+  .blog__images, .blog__img {
+    height: 350px;
+    width: 350px;
+  }
+  .buy {
+    padding-top: 50px;
+  }
+  .buy .title {
+    font-size: 36px;
+  }
+  .buy__contact {
+    padding: 45px 30px;
   }
 }
 
@@ -2537,6 +2736,20 @@ textarea::placeholder {
   .questions__container .questions__label {
     font-size: 16px;
   }
+  .blog__item {
+    max-width: 325px;
+  }
+  .blog__images, .blog__img {
+    height: 325px;
+    width: 325px;
+  }
+  .buy .title {
+    font-size: 35px;
+    text-align: center;
+  }
+  .contacts {
+    padding: 55px 0;
+  }
 }
 
 @media (max-width: 320px) {
@@ -2599,6 +2812,16 @@ textarea::placeholder {
   }
   .questions__container .questions__label {
     font-size: 14px;
+  }
+  .blog__item {
+    max-width: 250px;
+  }
+  .blog__images, .blog__img {
+    height: 250px;
+    width: 250px;
+  }
+  .buy__contact .title {
+    font-size: 27px;
   }
 }
 
