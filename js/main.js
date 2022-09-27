@@ -1,3 +1,11 @@
+$(function() {
+
+	$('.price__file').styler({
+    fileBrowse: 'Выбрать',
+  });
+
+});
+
 const btn = document.querySelector('.header-top__btn');
 const nav = document.querySelector('.nav');
 const menu = document.querySelector('.menu');
@@ -26,6 +34,12 @@ $('.advantage-slider').slick({
   responsive: [
     {
       breakpoint: 511,
+      settings: {
+        slidesToShow: 1,
+      }
+    },
+    {
+      breakpoint: 321,
       settings: {
         slidesToShow: 1,
       }

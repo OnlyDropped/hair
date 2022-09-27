@@ -2415,6 +2415,9 @@ textarea::placeholder {
     width: 275px;
     height: 275px;
   }
+  .advantage-slider .slick-slide[aria-hidden="true"] {
+    opacity: 0;
+  }
   .advantage-slider .slick-dots {
     bottom: -25px;
   }

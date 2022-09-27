@@ -511,6 +511,9 @@
       width: 275px;
       height: 275px;
     }
+    .slick-slide[aria-hidden="true"] {
+      opacity: 0;
+    }
     .slick-dots {
       bottom: -25px;
     }
