@@ -33,7 +33,13 @@ $('.advantage-slider').slick({
   nextArrow: '<button type="button" class="slick-next"><img src="img/icons/arrow-next.svg" alt=""></button>',
   responsive: [
     {
-      breakpoint: 511,
+      breakpoint: 610,
+      settings: {
+        slidesToShow: 1,
+      }
+    },
+    {
+      breakpoint: 376,
       settings: {
         slidesToShow: 1,
       }

@@ -1958,6 +1958,20 @@ textarea::placeholder {
   }
 }
 
+@media (max-width: 1440px) {
+  .advantage-slider .slick-list {
+    overflow: hidden;
+  }
+  .advantage-slider__card, .advantage-slider__item {
+    width: 560px;
+    height: 560px;
+  }
+  .advantage-slider__img {
+    width: 560px;
+    height: 560px;
+  }
+}
+
 @media (max-width: 1170px) {
   .home-info__link {
     padding: 16px 14px;
@@ -1974,6 +1988,14 @@ textarea::placeholder {
   }
   .about__list {
     margin-bottom: 60px;
+  }
+  .advantage-slider__card, .advantage-slider__item {
+    width: 520px;
+    height: 520px;
+  }
+  .advantage-slider__img {
+    width: 520px;
+    height: 520px;
   }
 }
 
@@ -1993,14 +2015,6 @@ textarea::placeholder {
         grid-template-columns: repeat(2, 1fr);
     gap: 30px 0px;
     margin-bottom: 85px;
-  }
-  .advantage-slider__card, .advantage-slider__item {
-    width: 470px;
-    height: 470px;
-  }
-  .advantage-slider__img {
-    width: 470px;
-    height: 470px;
   }
 }
 
@@ -2029,6 +2043,14 @@ textarea::placeholder {
   }
   .price__num {
     font-size: 38px;
+  }
+  .advantage-slider__card, .advantage-slider__item {
+    width: 485px;
+    height: 485px;
+  }
+  .advantage-slider__img {
+    width: 485px;
+    height: 485px;
   }
 }
 
@@ -2070,12 +2092,12 @@ textarea::placeholder {
     max-width: 100%;
   }
   .advantage-slider__card, .advantage-slider__item {
-    width: 400px;
-    height: 400px;
+    width: 420px;
+    height: 420px;
   }
   .advantage-slider__img {
-    width: 400px;
-    height: 400px;
+    width: 420px;
+    height: 420px;
   }
 }
 
@@ -2126,19 +2148,19 @@ textarea::placeholder {
   .price {
     background-position-x: center;
   }
+  .advantage-slider__card, .advantage-slider__item {
+    width: 385px;
+    height: 385px;
+  }
+  .advantage-slider__img {
+    width: 385px;
+    height: 385px;
+  }
 }
 
 @media (max-width: 870px) {
   .advantage {
     padding: 300px 0 125px;
-  }
-  .advantage-slider__card, .advantage-slider__item {
-    width: 350px;
-    height: 350px;
-  }
-  .advantage-slider__img {
-    width: 350px;
-    height: 350px;
   }
 }
 
@@ -2150,6 +2172,14 @@ textarea::placeholder {
         -ms-flex-pack: center;
             justify-content: center;
     gap: 15px;
+  }
+  .advantage-slider__card, .advantage-slider__item {
+    width: 350px;
+    height: 350px;
+  }
+  .advantage-slider__img {
+    width: 350px;
+    height: 350px;
   }
 }
 
@@ -2229,6 +2259,17 @@ textarea::placeholder {
   }
 }
 
+@media (max-width: 705px) {
+  .advantage-slider__card, .advantage-slider__item {
+    width: 300px;
+    height: 300px;
+  }
+  .advantage-slider__img {
+    width: 300px;
+    height: 300px;
+  }
+}
+
 @media (max-width: 645px) {
   .home-info__title {
     font-size: 36px;
@@ -2269,6 +2310,17 @@ textarea::placeholder {
   }
 }
 
+@media (max-width: 610px) {
+  .advantage-slider__card, .advantage-slider__item {
+    width: 420px;
+    height: 420px;
+  }
+  .advantage-slider__img {
+    width: 420px;
+    height: 420px;
+  }
+}
+
 @media (max-width: 510px) {
   .home-info__title {
     font-size: 27px;
@@ -2290,13 +2342,16 @@ textarea::placeholder {
   .price__caption {
     font-size: 23px;
   }
+}
+
+@media (max-width: 450px) {
   .advantage-slider__card, .advantage-slider__item {
-    width: 400px;
-    height: 400px;
+    width: 375px;
+    height: 375px;
   }
   .advantage-slider__img {
-    width: 400px;
-    height: 400px;
+    width: 375px;
+    height: 375px;
   }
 }
 
@@ -2345,18 +2400,6 @@ textarea::placeholder {
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .advantage-slider__card, .advantage-slider__item {
-    width: 360px;
-    height: 360px;
-  }
-  .advantage-slider__img {
-    width: 360px;
-    height: 360px;
-  }
-  .advantage-slider__img {
-    width: 360px;
-    height: 360px;
-  }
 }
 
 @media (max-width: 425px) {
@@ -2366,6 +2409,14 @@ textarea::placeholder {
   }
   .about {
     padding: 40px 0;
+  }
+  .advantage-slider__card, .advantage-slider__item {
+    width: 350px;
+    height: 350px;
+  }
+  .advantage-slider__img {
+    width: 350px;
+    height: 350px;
   }
 }
 
@@ -2377,17 +2428,40 @@ textarea::placeholder {
     font-size: 30px;
   }
   .advantage-slider__card, .advantage-slider__item {
-    width: 325px;
-    height: 325px;
+    width: 330px;
+    height: 330px;
   }
   .advantage-slider__img {
-    width: 325px;
-    height: 325px;
+    width: 330px;
+    height: 330px;
   }
-  .advantage-slider__img {
-    width: 325px;
-    height: 325px;
-  }
+  /*
+  .advantage-slider {
+    &__card,
+    &__item {
+      width: 325px;
+      height: 325px;
+    }
+    &__img {
+      width: 325px;
+      height: 325px;
+    }
+    &__img {
+      width: 325px;
+      height: 325px;
+    }
+    .slick-list {
+      overflow: hidden;
+    }
+    .slick-dots {
+      bottom: -45px;
+    }
+    .slick-arrow {
+      display: grid;
+      width: 35px;
+      height: 35px;
+    }
+  }*/
 }
 
 @media (max-width: 320px) {
@@ -2404,30 +2478,43 @@ textarea::placeholder {
     font-size: 26px;
   }
   .advantage-slider__card, .advantage-slider__item {
-    width: 275px;
-    height: 275px;
+    width: 285px;
+    height: 285px;
   }
   .advantage-slider__img {
-    width: 275px;
-    height: 275px;
+    width: 285px;
+    height: 285px;
   }
-  .advantage-slider__img {
-    width: 275px;
-    height: 275px;
-  }
-  .advantage-slider .slick-slide[aria-hidden="true"] {
-    opacity: 0;
-  }
-  .advantage-slider .slick-dots {
-    bottom: -25px;
+  .advantage-slider .slick-prev.slick-arrow {
+    right: 45px;
   }
   .advantage-slider .slick-arrow {
     width: 32px;
     height: 32px;
   }
-  .advantage-slider slick-prev.slick-arrow {
-    right: 40px;
-  }
+  /*
+  .advantage-slider {
+    &__card,
+    &__item {
+      width: 275px;
+      height: 275px;
+    }
+    &__img {
+      width: 275px;
+      height: 275px;
+    }
+    &__img {
+      width: 275px;
+      height: 275px;
+    }
+    .slick-slide[aria-hidden="true"] {
+      opacity: 0;
+    }
+    .slick-dots {
+      bottom: -25px;
+    }
+    
+  }*/
 }
 
 @media (max-width: 800px) {
