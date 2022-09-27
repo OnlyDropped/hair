@@ -44,6 +44,15 @@
       height: 520px;
     }
   }
+  .requirements {
+    &__title {
+      max-width: 100%;
+    }
+    &__info {
+      min-height: 420px;
+      padding: 55px 60px;
+    }
+  }
 }
 
 @media (max-width: 1122px) {
@@ -165,6 +174,11 @@
       height: 420px;
     }
   }
+  .requirements {
+    &__info {
+      padding: 55px 45px;
+    }
+  }
 }
 
 @media (max-width: 945px) {
@@ -226,6 +240,15 @@
     &__img {
       width: 385px;
       height: 385px;
+    }
+  }
+  .requirements {
+    &__box {
+      flex-direction: column;
+      gap: 15px 0;
+    }
+    &__info {
+      margin: 0 auto;
     }
   }
 }
@@ -332,6 +355,14 @@
       bottom: -65px;
     }
   }
+  .questions {
+    &__container .questions__body {
+      width: 100%;
+    }
+    &__container input:checked + .questions__label + .questions__body {
+      padding: 10px 14px 30px;
+    }
+  }
 }
 
 @media (max-width: 705px) {
@@ -344,6 +375,12 @@
     &__img {
       width: 300px;
       height: 300px;
+    }
+  }
+  .requirements {
+    .title {
+      font-size: 40px;
+      text-align: center;
     }
   }
 }
@@ -430,6 +467,30 @@
       font-size: 23px;
     }
   }
+  .requirements {
+    &__info {
+      padding: 35px 40px;
+    }
+    &__item + .requirements__item {
+      margin-top: 20px;
+    }
+  }
+  .questions {
+    .title {
+      font-size: 41px;
+      margin-bottom: 40px;
+    }
+    &__container .questions__label {
+      padding: 20px 5px;
+      font-size: 18px;
+    }
+    &__container .questions__body {
+      font-size: 16px;
+    }
+    &__box {
+      flex-direction: column;
+    }
+  }
 }
 @media (max-width: 450px) {
   .advantage-slider {
@@ -441,6 +502,11 @@
     &__img {
       width: 375px;
       height: 375px;
+    }
+  }
+  .requirements {
+    .title {
+      font-size: 35px;
     }
   }
 }
@@ -508,6 +574,16 @@
       height: 350px;
     }
   }
+  .requirements {
+    .title {
+      font-size: 33px;
+    }
+  }
+  .questions {
+    .title {
+      font-size: 39px;
+    }
+  }
 }
 
 @media (max-width: 375px) {
@@ -558,6 +634,23 @@
       height: 35px;
     }
   }*/
+  .requirements {
+    .title {
+      font-size: 29px;
+      margin-bottom: 35px;
+    }
+    &__item {
+      font-size: 16px;
+    }
+  }
+  .questions {
+    .title {
+      font-size: 34px;
+    }
+    &__container .questions__label {
+      font-size: 16px;
+    }
+  }
 }
 
 @media (max-width: 320px) {
@@ -621,4 +714,18 @@
     }
     
   }*/
+  .requirements {
+    .title {
+      font-size: 25px;
+      margin-bottom: 25px;
+    }
+  }
+  .questions {
+    .title {
+      font-size: 28px;
+    }
+    &__container .questions__label {
+      font-size: 14px;
+    }
+  }
 }
