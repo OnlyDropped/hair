@@ -17,7 +17,8 @@
     position: absolute;
     display: flex;
     inset: 0;
-    transform: translateX(-100%);
+    //transform: translateX(-100%);
+    transform: scale(0);    
     transition: all .5s ease-in-out;
     &__list {
       position: absolute;
@@ -33,7 +34,8 @@
     }
   }
   .header-nav--active {
-    transform: translateX(0%);
+    //transform: translateX(0%);
+    transform: scale(1);
   }
   .header-top {
     padding: 30px 0;

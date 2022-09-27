@@ -1789,8 +1789,8 @@ textarea::placeholder {
     display: -ms-flexbox;
     display: flex;
     inset: 0;
-    -webkit-transform: translateX(-100%);
-            transform: translateX(-100%);
+    -webkit-transform: scale(0);
+            transform: scale(0);
     -webkit-transition: all .5s ease-in-out;
     transition: all .5s ease-in-out;
   }
@@ -1816,8 +1816,8 @@ textarea::placeholder {
     font-size: 20px;
   }
   .header-nav--active {
-    -webkit-transform: translateX(0%);
-            transform: translateX(0%);
+    -webkit-transform: scale(1);
+            transform: scale(1);
   }
   .header-top {
     padding: 30px 0;
@@ -1985,6 +1985,9 @@ textarea::placeholder {
     max-width: 500px;
     margin: 0 32px;
   }
+  .post {
+    padding: 100px 0;
+  }
 }
 
 @media (max-width: 1170px) {
@@ -2145,6 +2148,15 @@ textarea::placeholder {
   .contacts__map {
     max-width: 600px;
   }
+  .post__images {
+    width: 500px;
+  }
+  .post__item + .post__item {
+    margin-top: 20px;
+  }
+  .post__info {
+    max-width: 450px;
+  }
 }
 
 @media (max-width: 1005px) {
@@ -2211,6 +2223,15 @@ textarea::placeholder {
   .contacts__map {
     max-width: 555px;
   }
+  .post__images {
+    width: 450px;
+  }
+  .post__img {
+    height: 500px;
+    margin-bottom: 65px;
+    -o-object-position: center;
+       object-position: center;
+  }
 }
 
 @media (max-width: 945px) {
@@ -2232,6 +2253,20 @@ textarea::placeholder {
     width: 500px;
     height: 800px;
     background-size: contain;
+  }
+  .post {
+    padding: 85px 0;
+  }
+  .post__title {
+    max-width: 100%;
+  }
+  .post__blockquote, .post__info {
+    max-width: 400px;
+  }
+  .post__images {
+    width: 400px;
+    -o-object-fit: contain;
+       object-fit: contain;
   }
 }
 
@@ -2301,6 +2336,25 @@ textarea::placeholder {
   }
   .contacts__span {
     margin-bottom: 0;
+  }
+  .post .title {
+    text-align: center;
+  }
+  .post__images {
+    display: none;
+  }
+  .post__info {
+    max-width: 100%;
+  }
+  .post__content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .post__blockquote {
+    margin: 0 auto;
+    text-align: center;
   }
 }
 
@@ -2431,6 +2485,13 @@ textarea::placeholder {
     width: 400px;
     height: 400px;
   }
+  .post {
+    padding: 70px 0;
+  }
+  .post__img {
+    height: 380px;
+    margin-top: 50px;
+  }
 }
 
 @media (max-width: 705px) {
@@ -2485,6 +2546,9 @@ textarea::placeholder {
   .advantage-slider__img {
     width: 285px;
     height: 285px;
+  }
+  .post__img {
+    height: 355px;
   }
 }
 
@@ -2578,6 +2642,9 @@ textarea::placeholder {
   .buy .title {
     font-size: 39px;
   }
+  .post__img {
+    height: 300px;
+  }
 }
 
 @media (max-width: 450px) {
@@ -2654,6 +2721,9 @@ textarea::placeholder {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+  .post .title {
+    font-size: 38px;
   }
 }
 
@@ -2750,6 +2820,12 @@ textarea::placeholder {
   .contacts {
     padding: 55px 0;
   }
+  .post {
+    padding: 50px 0;
+  }
+  .post .title {
+    font-size: 33px;
+  }
 }
 
 @media (max-width: 320px) {
@@ -2822,6 +2898,15 @@ textarea::placeholder {
   }
   .buy__contact .title {
     font-size: 27px;
+  }
+  .post__author {
+    margin-bottom: 60px;
+  }
+  .post .date {
+    margin-bottom: 15px;
+  }
+  .post .title {
+    font-size: 28px;
   }
 }
 
