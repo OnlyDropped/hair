@@ -143,7 +143,6 @@
   }
   .contacts {
     padding: 100px 0;
-    background: darkcyan;
     &__map {
       max-width: 650px;
       width: 100%;
@@ -591,7 +590,6 @@
       gap: 20px 0px;
     }
     &__map {
-      height: 350px;
       max-width: 100%;
       margin-left: 0;
     }
@@ -726,6 +724,16 @@
   .post {
     &__img {
       height: 355px;
+    }
+  }
+  .contacts {
+    &__map {
+      max-width: 100%;
+      margin-left: 0;
+      height: 400px;
+      iframe {
+        height: 100%;
+      }
     }
   }
 }
